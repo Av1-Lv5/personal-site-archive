@@ -1,0 +1,11 @@
+.project-card(tags = `${project.tags}`)
+    img(src = `assets/img/${project.id}-thumb.png`, alt="a placeholder")
+    div
+        div
+            h3 #{project.title}
+            p #{project.description} 
+                a(href=`/projects/${project.id}.html`) ...read more
+        div.links-container
+            include socialsDb
+            a(href = `https://github.com/${githubUsername}/${project.id}`, target='_blank') Code
+            a(href = `https://${project.id}.alvs.dev`, target='_blank') Live

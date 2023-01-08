@@ -1,0 +1,56 @@
+extends pug/layouts/page.pug
+
+block frontmatter 
+    - pageTitle = "Hi I'm Avinash"
+    - currentPage = 'home'
+
+block title 
+    title Welcome! • alvs
+
+block main
+    main
+        p Welcome to my little corner of the Internet. Where i share my work, thoughts, other places you can find me at.
+        
+        h3 I Create
+        p Webpages and Webapps. The main area of my focus is in front-end development. Check out 
+            a(href='/projects.html') projects
+            |  i've built so far.
+            | I also tend to create Happiness around me.
+
+        //- p I create responsive, easy to use, SEO optimised websites that loads faster on any browser with semantically structured and understandable code. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, features, animations, and coding interactive layouts.
+        
+        //- p  I'm interested in freelance opportunities. However, if you have other requests or questions,  
+        //-     a(href="/contact.html") contact me
+        
+        h3  Languages and Tools 
+        #skills 
+            span HTML
+            span CSS
+            span Javascript
+            span Typescript
+            span React
+            //- span Bootstrap
+            //- span Tailwind CSS
+            //- span Jekyll
+            //- span Astro
+            //- span Scss 
+            //- span Postcss
+            span Pug
+            span Git 
+            span Vite 
+            span Gulp
+        
+        h3 About this site 
+        p This site is built with plain HTML, CSS and a sprinkle of JS. Used Pug templating and Gulp for ease of maintaining and hosted on netlify.
+        p Every section of this site has long changelogs. I am completely unsure of what goes in.
+        //- article
+        //-    p This site is part of the fediverse webring. Get a hit of web 1.0 nostalgia, visit some of my neighbours in this webring.
+        //-    br
+        //-    p.links-container.fediring
+        //-        a(href="https://fediring.net/previous?host=alvs.dev") ← 
+        //-        a(href="https://fediring.net/") Fediring
+        //-        a(href="https://fediring.net/next?host=alvs.dev") →
+
+        
+
+

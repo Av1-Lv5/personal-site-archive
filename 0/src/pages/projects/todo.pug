@@ -1,0 +1,22 @@
+extends ../../pug/layouts/project-page
+block frontmatter 
+    - projectId = 'todo'
+
+block title
+    - projectTitle = 'Todo';
+    title #{projectTitle} • Projects
+
+block append technical 
+
+    li Built using HTML, CSS, and JS.
+
+block append facts 
+
+    li My first ever CURD application using JS.
+    li Learnt using Local storage browser API.
+
+block append attributions 
+
+    li This project is built following the guidance from 
+        a(href="https://www.youtube.com/watch?v=Ttf3CEsEwMQ") DevEd Todo project
+        |  on Youtube.

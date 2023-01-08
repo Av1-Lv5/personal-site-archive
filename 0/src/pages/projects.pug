@@ -1,0 +1,17 @@
+extends ../pug/layouts/page.pug
+block frontmatter 
+    - pageTitle = "Things I'vs built"
+    - currentPage = 'projects'
+block title 
+    title Projects • alvs 
+
+block main
+    script(src="tagsFilter.js" defer) 
+    #tags-container 
+        span.tag.selected All
+        span.tag React 
+        span.tag Typescript 
+        span.tag Javascript 
+    include ../pug/includes/projectsDb
+    each project in projectsDb 
+        include ../pug/includes/project-card

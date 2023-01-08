@@ -1,0 +1,22 @@
+extends ../../pug/layouts/project-page
+
+block frontmatter 
+    - projectId = 'ryt'
+
+block title
+    - projectTitle = 'Youtube library clone';
+    title #{projectTitle} • Projects
+
+block append technical 
+    li Build using React js, typescript and vite build tool.
+    li Used 
+        a(href="https://raindrop.io") raindrop.io
+        |  a modern bookmark manager
+
+block append facts 
+    li Still a work in progress.
+    li The problem i am trying to solve is that youtube's library doesn't have tag system and doesn't allow users to search content just within the library.
+
+block append attributions 
+    li All the icons used in the project are from 
+        a(href="https://remixicon.com/") Remix icons

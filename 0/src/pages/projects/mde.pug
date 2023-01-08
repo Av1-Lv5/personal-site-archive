@@ -1,0 +1,24 @@
+extends ../../pug/layouts/project-page
+
+block frontmatter 
+    - projectId = 'mde'
+
+block title
+    - projectTitle = 'Markdown editor';
+    title #{projectTitle} • Projects
+
+block append technical 
+    li Build using React js and vite build tool.
+    li Used 
+        a(href="https://www.npmjs.com/package/markdown-it") markdown-it
+        |  node package to parse markdown syntax to HTML.
+
+block append facts 
+    li This is my first project using react after learning react.
+    li Took me around 4 days to complete.
+
+block append attributions 
+    li The designs are grabbed from 
+        a(href="https://www.frontendmentor.io/challenges/inbrowser-markdown-editor-r16TrrQX9") frontend mentors
+    li All the icons used in the project are from 
+        a(href="https://remixicon.com/") Remix icons

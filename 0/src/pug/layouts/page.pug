@@ -1,0 +1,13 @@
+include ../includes/boilerplate
+block frontmatter
+header
+    nav
+        a(href="/" class={active: currentPage === 'home'}) Home
+        a(href="/projects.html" class={active: currentPage === 'projects'}) Projects
+        a(href="/about.html" class={active: currentPage === 'about'}) About
+        a(href="/contact.html" class={active: currentPage === 'contact'}) Contact
+        include ../includes/socialsDb
+        a(href=`https://github.com/${githubUsername}` target="_blank") Github 
+    h1 #{pageTitle}
+block main
+include ../includes/footer

@@ -1,0 +1,23 @@
+include ../includes/boilerplate
+block frontmatter
+header
+    h1 #{projectTitle}
+main
+    div.links-container.project-page
+        a#back-to-projects ←
+        script. 
+            document.getElementById("back-to-projects").addEventListener("click", () => history.back())
+        span
+            include ../includes/socialsDb
+            a(href = `https://github.com/${githubUsername}/${projectId}`, target='_blank') Code
+            a(href = `https://${projectId}.alvs.dev`, target='_blank') Live
+    block technical
+        h3 Technical sheet code
+            ul
+    block facts
+        h3 Random facts
+            ul
+    block attributions
+        h3 Attributions
+            ul
+include ../includes/footer

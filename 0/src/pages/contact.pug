@@ -1,0 +1,39 @@
+extends ../pug/layouts/page.pug
+block frontmatter 
+    - pageTitle = "Get in touch"
+    - currentPage = 'contact'
+block title 
+    title Contact • alvs 
+
+block main 
+    main
+        p: b Got an interesting project you're working on, or just want to say hi?
+        p I'd love to hear from you! The best way to reach me is through an email.
+
+        h3.contact
+            include ../pug/includes/SVG/email
+            span Email: 
+            include ../pug/includes/socialsDb
+            - content = `${mail}`
+            a(href=`mailto:${mail}`) #{content}
+        p.notice: small
+            b Please Note : 
+            | This is a randomly generated email that I change regularly to prevent spam. Sometimes, i reply to your email from my actual email address, so you could save my contact info for future communications.
+        hr
+        h3 Contact form
+        form(netlify )
+            div.flex
+                p 
+                    label(for="name") Name 
+                    input(type="text" placeholder='Enter your name' name='name' id='name')
+                p 
+                    label(for="email") Email 
+                    input(type="email" id='email' name="email", placeholder='Enter your email' required)
+            p 
+                label(for="subject") Subject
+                input(type="text" id='subject' name="subject" placeholder='Subject of your message' required)
+            p 
+                label(for="message") Message 
+                textarea(name="message" id='message' cols="30" rows="6" placeholder="Enter your message") 
+            button(type='submit') Send
+            button(type="reset") Reset
